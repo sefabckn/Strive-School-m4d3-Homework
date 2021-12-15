@@ -6,18 +6,16 @@ const SingleBook = (props) =>{
         <Container>
             <Row>{
                
-                    <Col>
                     <Card style={{ width: '12rem' }}>
-                        <Card.Img variant="top" src={props.img}/>
+                        <Card.Img variant="top" src={props.book.img}/>
                         <Card.Body>
-                            <Card.Title>{props.category}</Card.Title>
+                            <Card.Title>{props.book.category}</Card.Title>
                             <Card.Text>
-                            {props.title}
+                            {props.book.title}
                             </Card.Text>
                         </Card.Body>
                     </Card>        
-                </Col>
-                
+               
                 }</Row>
         </Container>
     )}
