@@ -11,7 +11,7 @@ class BookList extends Component {
     }
 
     /* 
-    handleSearchInput  = (value) =>{
+    handleInput  = (value) =>{
         this.setState({
             searchQuery:value
         })
@@ -36,7 +36,7 @@ class BookList extends Component {
                     </Col>
                 </Row>
                 <Row>{
-                    this.props.books.filter((filteredBook)=>filteredBook.title.toLowerCase().includes(this.state.searchQuery)).map((book)=>
+                    this.props.books.filter((filteredBook)=>filteredBook.title.toLowerCase().includes(this.state.searchQuery.length<3 && this.state.searchQuery)).map((book)=>
                     <Col>
                         <SingleBook book={book}/>
                     </Col>        
