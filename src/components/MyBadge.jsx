@@ -4,7 +4,7 @@ class MyBadge extends Component {
     render(){
         return(
             <div>
-             <Badge pill bg={this.props.color}>{this.props.text}</Badge>
+             <Badge pill variant={this.props.color}>{this.props.text}</Badge>
             </div>
         )
     }
