@@ -13,7 +13,7 @@ class SingleBook extends Component{
                             <Card.Img 
                             variant="top" 
                             src={this.props.book.img}
-                            onClick={()=> {this.setState({selected:!this.state.selected})}}
+                            onClick={()=> {this.setState({selected:!this.state.selected})}}//contolling state with each click. On second click value will change. true/false => false/true 
                             style={{border:`2px solid ${this.state.selected?"red":"none"}`}}
                             />
                             <Card.Body>
